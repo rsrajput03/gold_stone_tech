@@ -97,7 +97,7 @@ function App() {
   const handleDownload = async () => {
     try {
       const response = await fetch(
-        "https://kind-jade-starfish-wig.cyclic.app/update"
+        "http://localhost:8000/update"
       );
       if (response.ok) {
         const blob = await response.blob();
